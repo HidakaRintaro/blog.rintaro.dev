@@ -1,0 +1,10 @@
+extends:
+  - prettier
+plugins:
+  - '@typescript-eslint'
+parserOptions:
+  ecmaVersion: latest
+  sourceType: module
+  project: ['./tsconfig.json']
+rules:
+  eqeqeq: error
