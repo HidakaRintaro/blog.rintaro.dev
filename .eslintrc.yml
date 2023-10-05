@@ -1,10 +1,17 @@
-extends:
-  - prettier
 plugins:
   - '@typescript-eslint'
-parserOptions:
-  ecmaVersion: latest
-  sourceType: module
-  project: ['./tsconfig.json']
-rules:
-  eqeqeq: error
+extends:
+  - eslint:recommended
+  - plugin:astro/recommended
+  - plugin:@typescript-eslint/recommended
+overrides:
+  - files:
+      - '*.astro'
+    parser: 'astro-eslint-parser'
+    parserOptions:
+      parser: '@typescript-eslint/parser'
+      extraFileExtensions:
+        - '.astro'
+    rules:
+      'astro/no-conflict-set-directives': 'error'
+      'astro/no-unused-define-vars-in-style': 'error'

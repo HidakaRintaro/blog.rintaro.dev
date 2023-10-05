@@ -6,7 +6,7 @@
     "paths": {
       "@components/*": ["src/components/*"],
       "@layouts/*": ["src/layouts/*"],
-      "@styled-system/*": ["styled-system/*"]
+      "@pandacss/*": ["styled-system/*"]
     }
   }
 }
