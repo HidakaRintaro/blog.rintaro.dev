@@ -1,0 +1,26 @@
+name: pull request ci
+
+on:
+  push:
+    branches:
+      - 'main'
+  pull_request:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+
+      - name: Install package
+        run: bun install
+
+      - name: ESLint
+        run: bun run lint
+
+      - name: Prettier
+        run: bun run fmt:check

@@ -1,6 +1,7 @@
 {
-  "name": "@HidakaRintaro/blog.rintaro.dev",
+  "name": "blog.rintaro.dev",
   "version": "0.0.1",
+  "author": "@HidakaRintaro",
   "private": true,
   "packageManager": "bun@1.0.3",
   "engines": {
@@ -16,10 +17,10 @@
     "astro": "astro",
     "prepare": "panda codegen",
     "lint": "eslint --ext .ts,.astro ./src",
-    "format": "prettier --write 'src/**/*.{js,ts,astro}'",
-    "format:check": "prettier --check 'src/**/*.{js,ts,astro}'",
+    "fmt": "prettier --write 'src/**/*.{js,ts,astro}'",
+    "fmt:check": "prettier --check 'src/**/*.{js,ts,astro}'",
     "lint:fix": "eslint --fix 'src/**/*.{js,ts,astro}'",
-    "fix": "bun format && bun lint:fix"
+    "fix": "bun fmt && bun lint:fix"
   },
   "dependencies": {
     "astro": "^3.2.1"
