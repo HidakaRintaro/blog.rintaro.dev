@@ -4,6 +4,10 @@ extends:
   - eslint:recommended
   - plugin:astro/recommended
   - plugin:@typescript-eslint/recommended
+rules:
+  '@typescript-eslint/triple-slash-reference':
+    - 'error'
+    - path: 'always' # MEMO: .astroのd.tsを読み込むとerrorになるのでpathをalwaysにする
 overrides:
   - files:
       - '*.astro'

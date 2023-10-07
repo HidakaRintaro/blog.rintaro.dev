@@ -1,0 +1,9 @@
+dist/
+.astro
+bun.lockb
+
+*.md
+
+.env*
+
+styled-system/*
