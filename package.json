@@ -23,6 +23,7 @@
     "fix": "bun fmt && bun lint:fix"
   },
   "dependencies": {
+    "@fontsource/zen-maru-gothic": "^5.0.14",
     "astro": "^3.2.1"
   },
   "devDependencies": {
