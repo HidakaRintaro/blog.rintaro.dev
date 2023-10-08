@@ -1,0 +1,22 @@
+---
+import { css } from '@styledSystem/css'
+
+interface Props {}
+---
+
+<footer
+  class={css({
+    paddingTop: '25px',
+    paddingBottom: '25px',
+    textAlign: 'center',
+  })}
+>
+  <p>
+    <small
+      class={css({
+        fontSize: '16px',
+        textShadow: '1px 1px 1px #ffffff',
+      })}>&copy; {new Date().getFullYear()} HidakaRintro</small
+    >
+  </p>
+</footer>
