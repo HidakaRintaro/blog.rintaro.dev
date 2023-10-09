@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro'
 import { css } from '@styledSystem/css'
 import BlogListItem from '@components/BlogListItem.astro'
+import TagsCard from '@components/TagsCard.astro'
 
 const list = [
   {
@@ -46,6 +47,12 @@ const list = [
         ))
       }
     </div>
-    <div></div>
+    <div
+      class={css({
+        padding: '1.5rem 1.5rem 0 0',
+      })}
+    >
+      <TagsCard />
+    </div>
   </main>
 </Layout>

@@ -1,0 +1,73 @@
+---
+import { css } from '@styledSystem/css'
+
+const tags = [
+  'javascript',
+  'Astro',
+  'Typescript',
+  'Java',
+  'React',
+  'Go',
+  'Life',
+]
+---
+
+<div
+  class={css({
+    width: '20rem',
+    borderRadius: '10px',
+    boxShadow: '-5px -5px 20px #ffffff, 5px 5px 20px #BABECC',
+    padding: '1rem',
+    marginBottom: '20px',
+    textShadow: '1px 1px 1px #ffffff',
+  })}
+>
+  <h3
+    class={css({
+      fontSize: '1.5rem',
+      fontWeight: 'bold',
+    })}
+  >
+    Tags
+  </h3>
+  <div
+    class={css({
+      margin: '0.5rem 0 0.5rem 0',
+      height: '1px',
+      backgroundColor: 'gray',
+      boxShadow: '1px 1px 1px #ffffff',
+      borderRadius: '1px',
+    })}
+  >
+  </div>
+  <div
+    class={css({
+      display: 'flex',
+      flexWrap: 'wrap',
+      gap: '1rem',
+    })}
+  >
+    {
+      tags.map((tag) => (
+        <div
+          class={css({
+            borderRadius: '10px',
+            boxShadow: '-5px -5px 20px #ffffff, 5px 5px 20px #BABECC',
+            padding: '0.5rem',
+            textShadow: '1px 1px 1px #ffffff',
+            transition: 'all 0.2s ease-in-out',
+            _hover: {
+              boxShadow: '-2px -2px 5px #ffffff, 2px 2px 5px #BABECC',
+            },
+            _active: {
+              boxShadow:
+                'inset 1px 1px 2px #BABECC, inset -1px -1px 2px #ffffff',
+            },
+          })}
+        >
+          {tag}
+        </div>
+      ))
+    }
+  </div>
+</div>
