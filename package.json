@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@fontsource/zen-maru-gothic": "^5.0.14",
-    "astro": "^3.2.1"
+    "astro": "^4.0.0"
   },
   "devDependencies": {
     "@pandacss/astro": "^0.16.0",
